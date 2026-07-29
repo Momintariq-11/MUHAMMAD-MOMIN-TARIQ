@@ -7,7 +7,7 @@ export default function Education() {
       <div className="wrap">
         <div className="section-head">
           <p className="eyebrow">
-            <span className="idx">5</span> — EDUCATION
+            <span className="idx">05</span> — EDUCATION
           </p>
           <h2 className="section-title">Academic background</h2>
           <p className="section-sub">
