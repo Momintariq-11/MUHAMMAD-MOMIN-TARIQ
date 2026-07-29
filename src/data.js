@@ -33,7 +33,7 @@ export const socials = [
     href: 'https://www.linkedin.com/in/muhammad-momin-tariq-4b1b95369',
     handle: '/in/muhammad-momin-tariq',
   },
-  { label: 'Email', href: 'mailto:REPLACE_ME@example.com', handle: 'REPLACE_ME@example.com' },
+  { label: 'Email', href: 'mailto:momintariq639@gmail.com', handle: 'momintariq639@gmail.com' },
 ]
 
 export const skills = [
