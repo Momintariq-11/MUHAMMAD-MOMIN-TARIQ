@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="nav__inner wrap">
         <button className="nav__brand" onClick={() => go('intro')} aria-label="Back to top">
           <span className="nav__dot" aria-hidden="true" />
-          <span className="mono nav__brand-text">M.MOMIN_TARIQ</span>
+          <span className="mono nav__brand-text">MUHAMMAD MOMIN TARIQ</span>
         </button>
 
         <nav className="nav__links" aria-label="Primary">
