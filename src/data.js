@@ -119,6 +119,7 @@ export const projects = [
   },
 ]
 
+
 /*
   PLACEHOLDER — replace with your real LinkedIn education history.
   I could not access your LinkedIn profile page (it sits behind a
@@ -126,10 +127,18 @@ export const projects = [
 */
 export const education = [
   {
-    degree: 'REPLACE ME — Degree Title',
-    institution: 'REPLACE ME — Institution Name',
-    period: 'REPLACE ME — e.g. 2023 — Present',
-    detail: 'REPLACE ME — relevant coursework, focus area, or achievements.',
+    degree: 'BACHELOR OF SCIENCE ARTIFICIAL INTELLIGENCE ',
+    institution: 'THE UNIVERSITY OF FAISALABAD',
+    period: '2024 — 2028',
+    detail: 'PYHTON,DBMS,ARTIFICIAL INTELLIGENCE',
+  },
+]
+export const education = [
+  {
+    degree: 'FSC PRE-ENGINEERING',
+    institution: 'KIPS COLLEGE',
+    period: '2022 — 2024',
+    detail: 'Completed F.Sc. Pre-Engineering from KIPS College, with a focus on Mathematics, Physics, and Chemistry. Developed strong analytical thinking, logical reasoning, and problem-solving skills through a rigorous academic curriculum.',
   },
 ]
 
@@ -139,9 +148,34 @@ export const education = [
 */
 export const experience = [
   {
-    role: 'REPLACE ME — Job Title',
-    org: 'REPLACE ME — Company Name',
-    period: 'REPLACE ME — e.g. Jun 2025 — Present',
-    points: ['REPLACE ME — a key responsibility or outcome.', 'REPLACE ME — another line item.'],
+    role: 'Software Engineer Intern',
+    org: 'KOLONX',
+    period: 'JULY-2026 TO OCTOBER-2026',
+    points: ['Developed a strong foundation in Object-Oriented Programming (OOP), SOLID principles, software design patterns, dependency injection, software architecture, SQL, database design, Git, and version control. Gained practical experience in writing clean, maintainable code, implementing unit tests with JUnit, applying Test-Driven Development (TDD), and building Java desktop applications using JavaFX, JDBC, and the MVC architecture. Currently expanding my knowledge of Swift, SwiftUI, and modern iOS application development.'],
+  },
+]
+export const experience = [
+  {
+    role: 'AI/ML INTERN',
+    org: 'DECOELABS',
+    period: 'JUNE-2026 TO AUGUST-2026',
+    points: ['As an Artificial Intelligence Intern at Decode Labs, I gained hands-on experience in Python development and machine learning through project-based learning. I worked on data preprocessing, model implementation, and problem-solving while improving my programming, debugging, and software development skills in a collaborative environment.'],
+  },
+]
+export const experience = [
+  {
+    role: 'MACHINE LEARNING INTERN',
+    org: 'INTERNEE.PK',
+    period: 'JULY-2026 TO SEPTEMBER-2026',
+    points: ['As a Machine Learning Intern at Internee.pk, I have gained hands-on experience in Machine Learning and Artificial Intelligence by working on practical projects and real-world datasets. I have strengthened my skills in Python, data preprocessing, exploratory data analysis (EDA), model development, and model evaluation using industry-standard tools and libraries. This experience has enhanced my problem-solving, analytical thinking, and collaboration skills while deepening my understanding of modern Machine Learning workflows.'],
+  
+  },
+]
+export const experience = [
+  {
+    role: 'Photographer',
+    org: 'mmt.clicks',
+    period: 'JULY-2026 TO SEPTEMBER-2026',
+    href: 'https://www.instagram.com/mmt.clicks/',
   },
 ]
