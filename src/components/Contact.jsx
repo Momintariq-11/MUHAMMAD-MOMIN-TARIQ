@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="wrap">
         <div className="contact__inner">
           <p className="eyebrow">
-            <span className="idx">06</span> — CONNECT
+            <span className="idx">06</span> —  CONTACT INFO
           </p>
           <h2 className="contact__title">
             Let's build <span className="text-red">something</span>.
