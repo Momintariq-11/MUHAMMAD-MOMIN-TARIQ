@@ -6,7 +6,7 @@ export default function Experience() {
       <div className="wrap">
         <div className="section-head">
           <p className="eyebrow">
-            <span className="idx">SESSION_04</span> — EXPERIENCE
+            <span className="idx">04</span> — EXPERIENCE
           </p>
           <h2 className="section-title">Where I've worked</h2>
           <p className="section-sub">
