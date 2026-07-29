@@ -38,7 +38,7 @@ export default function Contact() {
       <footer className="footer">
         <div className="wrap footer__inner">
           <span className="mono footer__brand">{profile.name.toUpperCase()}</span>
-          <span className="mono footer__meta">© {new Date().getFullYear()} · BUILT FOR VERCEL</span>
+          
         </div>
       </footer>
     </section>
