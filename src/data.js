@@ -172,5 +172,6 @@ export const experience = [
     org: 'mmt.clicks',
     period: 'JULY-2026 TO SEPTEMBER-2026',
     href: 'https://www.instagram.com/mmt.clicks/',
+    points: ['Managing mmt.clicks photography page on Instagram — shooting, editing, and curating visual content.'],
   },
 ]

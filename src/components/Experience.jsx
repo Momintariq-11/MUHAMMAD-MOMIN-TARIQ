@@ -26,7 +26,7 @@ export default function Experience() {
                 <h3 className="timeline__role">{e.role}</h3>
                 <p className="timeline__org">{e.org}</p>
                 <ul className="timeline__points">
-                  {e.points.map((pt, j) => (
+                  {(e.points || []).map((pt, j) => (
                     <li key={j}>{pt}</li>
                   ))}
                 </ul>
