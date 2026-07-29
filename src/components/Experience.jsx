@@ -10,7 +10,7 @@ export default function Experience() {
           </p>
           <h2 className="section-title">Where I've worked</h2>
           <p className="section-sub">
-            Edit <code className="mono inline-code">src/data.js</code> → <code className="mono inline-code">experience</code> with your real history.
+         
           </p>
         </div>
 
