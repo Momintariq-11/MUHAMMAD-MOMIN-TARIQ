@@ -23,7 +23,7 @@ export const profile = {
   bio:
     "I'm a developer working across iOS app development, Java desktop development, and full-stack web development. My projects range from embedded AI hardware (an obstacle-detection stick for visually impaired users) to CLI fleet-management simulators and classic OOP design-pattern implementations in Java, alongside web-based data tooling. I care about writing systems that are structured clearly enough that someone else could read them cold.",
   photo: '/images/profile.png',
-  resumeNote: 'Résumé available on request',
+  resumeNote: 'Resume available on request',
 }
 
 export const socials = [
@@ -31,7 +31,7 @@ export const socials = [
   {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/muhammad-momin-tariq-4b1b95369',
-    handle: '/in/muhammad-momin-tariq',
+    handle: 'Muhammad Momin Tariq',
   },
   { label: 'Email', href: 'mailto:momintariq639@gmail.com', handle: 'momintariq639@gmail.com' },
 ]
@@ -154,7 +154,7 @@ export const experience = [
   },
   {
     role: 'AI/ML INTERN',
-    org: 'DECOELABS',
+    org: 'DECODELAB',
     period: 'JUNE-2026 TO AUGUST-2026',
     points: ['As an Artificial Intelligence Intern at Decode Labs, I gained hands-on experience in Python development and machine learning through project-based learning. I worked on data preprocessing, model implementation, and problem-solving while improving my programming, debugging, and software development skills in a collaborative environment.'],
   },
