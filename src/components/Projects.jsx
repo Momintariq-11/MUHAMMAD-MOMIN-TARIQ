@@ -6,7 +6,7 @@ export default function Projects() {
       <div className="wrap">
         <div className="section-head">
           <p className="eyebrow">
-            <span className="idx">3</span> — PROJECTS
+            <span className="idx">03</span> — PROJECTS
           </p>
           <h2 className="section-title">Selected work</h2>
           <p className="section-sub">
