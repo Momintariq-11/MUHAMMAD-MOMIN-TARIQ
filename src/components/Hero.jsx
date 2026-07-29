@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="wrap hero__grid">
         <div className="hero__copy">
           <p className="eyebrow">
-            <span className="idx">1</span> — INTRODUCTION
+            <span className="idx">01</span> — INTRODUCTION
           </p>
 
           <h1 className="hero__name">
