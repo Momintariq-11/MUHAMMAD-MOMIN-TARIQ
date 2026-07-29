@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="wrap hero__grid">
         <div className="hero__copy">
           <p className="eyebrow">
-            <span className="idx">SESSION_01</span> — INTRODUCTION
+            <span className="idx">1</span> — INTRODUCTION
           </p>
 
           <h1 className="hero__name">
@@ -43,7 +43,7 @@ export default function Hero() {
         <div className="hero__photo-wrap">
           <div className="hero__photo-frame">
             <img src={profile.photo} alt={`${profile.name} portrait`} className="hero__photo" />
-            <span className="hero__photo-tag mono">FOUND.jpg</span>
+            <span className="hero__photo-tag mono"></span>
           </div>
           <div className="hero__photo-grid" aria-hidden="true" />
         </div>
