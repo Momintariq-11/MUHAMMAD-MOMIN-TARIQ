@@ -10,16 +10,15 @@ export default function Projects() {
           </p>
           <h2 className="section-title">Selected work</h2>
           <p className="section-sub">
-            Pulled from{' '}
+           
             <a
               href="https://github.com/Momintariq-11"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-link"
             >
-              github.com/Momintariq-11
             </a>
-            . Each one links straight to the repo.
+          
           </p>
         </div>
 
