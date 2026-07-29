@@ -7,7 +7,7 @@ export default function Skills() {
       <div className="wrap">
         <div className="section-head">
           <p className="eyebrow">
-            <span className="idx">2</span> — CAPABILITIES
+            <span className="idx">02</span> — CAPABILITIES
           </p>
           <h2 className="section-title">What I build with</h2>
           <p className="section-sub">
