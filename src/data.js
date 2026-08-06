@@ -55,7 +55,7 @@ export const skills = [
   {
     category: 'Full-Stack Development',
     id: '03',
-    items: ['HTML/CSS/JavaScript', 'React', 'Python (Flask-style data apps)', 'REST-style app structure', 'Git & GitHub workflows'],
+    items: ['JavaFX | FXML | Event Handling | Form Validation | JDBC | MVC | SwiftUI', 'React', 'C++','Python', 'java', 'Git & GitHub'],
   },
   {
     category: 'Applied AI / ML',
@@ -110,12 +110,12 @@ export const projects = [
     href: 'https://github.com/Momintariq-11/AI-Recommendation-Logic',
   },
   {
-    title: 'Design Patterns in Java',
-    tag: 'Java · Fundamentals',
+    title: 'Intern Performance Prediction Model',
+    tag: 'python, HTML, CSS, JavaScript · Fundamentals',
     description:
-      'A collection of 8 individual Java tasks, each implementing a distinct design pattern — Singleton, Factory, Observer, Builder, Facade, Strategy, Repository, and Adapter.',
-    stack: ['Java', 'Design Patterns', 'OOP'],
-    href: 'https://github.com/Momintariq-11/Pattern-in-java',
+      'A machine learning-based system that predicts intern performance using key factors like task completion, feedback, and attendance. Designed to support data-driven evaluation and performance improvement..',
+    stack: ['python,HTML,CSS','OOP'],
+    href: 'https://intern-performance-prediction-model.vercel.app/',
   },
 ]
 
