@@ -79,7 +79,7 @@ export const projects = [
   },
   {
     title: 'FLEET-X',
-    tag: 'Java · Desktop',
+    tag: 'Java · CLI',
     description:
       'A CLI-based Fleet Management System simulating a lineup of autonomous vehicles — cars, drones, and delivery bots — built to showcase core object-oriented design across a real console application.',
     stack: ['Java', 'OOP', 'CLI'],
@@ -95,7 +95,7 @@ export const projects = [
   },
   {
     title: 'Data Classification Using AI',
-    tag: 'Web · ML Tooling',
+    tag: 'Local Deployment · ML Tooling',
     description:
       'A data classification web app built for Decode Labs that streams a custom dataset into a Random Forest model, automating data cleaning, variable encoding, and validation splits.',
     stack: ['HTML', 'Python', 'Random Forest'],
@@ -111,7 +111,7 @@ export const projects = [
   },
   {
     title: 'Intern Performance Prediction Model',
-    tag: 'python, HTML, CSS, JavaScript · Fundamentals',
+    tag: 'Python · WEB',
     description:
       'A machine learning-based system that predicts intern performance using key factors like task completion, feedback, and attendance. Designed to support data-driven evaluation and performance improvement..',
     stack: ['python,HTML,CSS','OOP'],
@@ -168,10 +168,15 @@ export const experience = [
   },
 
   {
-    role: 'Photographer',
+   {
+    role: 'Photography Hobbyist',
     org: 'mmt.clicks',
-    period: 'JULY-2026 TO SEPTEMBER-2026',
+    period: 'JULY-2026 TO PRESENT',
     href: 'https://www.instagram.com/mmt.clicks/',
-    points: ['Managing mmt.clicks photography page on Instagram — shooting, editing, and curating visual content.'],
+    points: [
+        'Pursuing photography as a creative hobby through MMT.clicks — capturing, editing, and sharing visual moments.',
+        'Exploring visual storytelling, composition, and creative photography techniques as part of my personal passion.'
+    ]
+}
   },
 ]
