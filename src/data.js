@@ -168,15 +168,10 @@ export const experience = [
   },
 
   {
-   {
     role: 'Photography Hobbyist',
     org: 'mmt.clicks',
     period: 'JULY-2026 TO PRESENT',
     href: 'https://www.instagram.com/mmt.clicks/',
-    points: [
-        'Pursuing photography as a creative hobby through MMT.clicks — capturing, editing, and sharing visual moments.',
-        'Exploring visual storytelling, composition, and creative photography techniques as part of my personal passion.'
-    ]
-}
-  },
+    points: ['Pursuing photography as a creative hobby through MMT.clicks — capturing, editing, and sharing visual moments.Exploring visual storytelling, composition, and creative photography techniques as part of my personal passion.'],
+},
 ]
