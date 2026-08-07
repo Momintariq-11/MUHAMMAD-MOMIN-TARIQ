@@ -130,7 +130,7 @@ export const education = [
     degree: 'BACHELOR OF SCIENCE ARTIFICIAL INTELLIGENCE ',
     institution: 'THE UNIVERSITY OF FAISALABAD',
     period: '2024 — 2028',
-    detail: 'PYHTON,DBMS,ARTIFICIAL INTELLIGENCE',
+    detail: 'DSA,PYHTON,DBMS,ARTIFICIAL INTELLIGENCE',
   },
 
   {
