@@ -1,19 +1,3 @@
-/*
-  ────────────────────────────────────────────────────────────────
-  ALL SITE CONTENT LIVES HERE.
-  Edit this file to update anything — text, links, projects, etc.
-  No other file needs to change for content updates.
-
-  IMPORTANT — read before deploying:
-  LinkedIn blocks automated/AI access to individual profile pages
-  (it sits behind a login wall), so your Education and Experience
-  entries below are PLACEHOLDERS, not real data pulled from your
-  profile. Replace every entry marked "REPLACE ME" with your
-  actual details before you publish this site. Everything in
-  `projects` below WAS pulled live from your public GitHub repos.
-  ────────────────────────────────────────────────────────────────
-*/
-
 export const profile = {
   name: 'Muhammad Momin Tariq',
   role: 'iOS · Java Desktop · Full-Stack Developer',
@@ -55,19 +39,20 @@ export const skills = [
   {
     category: 'Full-Stack Development',
     id: '03',
-    items: ['JavaFX | FXML | Event Handling | Form Validation | JDBC | MVC | SwiftUI', 'React', 'C++','Python', 'java', 'Git & GitHub'],
+    items: ['JavaFX | FXML | Event Handling | Form Validation | JDBC | MVC | SwiftUI', 'React', 'C++', 'Python', 'Java', 'Git & GitHub'],
   },
   {
     category: 'Applied AI / ML',
     id: '04',
     items: ['Rule-based systems', 'Random Forest / classification', 'Recommendation logic', 'Embedded AI (Arduino sensor integration)'],
   },
+  {
+    category: 'Database & Backend',
+    id: '05',
+    items: ['MySQL', 'SQL & Database Design', 'JDBC & Connection Pooling', 'CRUD Operations', 'Relational Data Modelling', 'Query Optimization'],
+  },
 ]
 
-/*
-  Pulled live from https://github.com/Momintariq-11 — these are your
-  actual public repositories with their real descriptions.
-*/
 export const projects = [
   {
     title: 'AI Smart Blind Stick',
@@ -113,26 +98,36 @@ export const projects = [
     title: 'Intern Performance Prediction Model',
     tag: 'Python · WEB',
     description:
-      'A machine learning-based system that predicts intern performance using key factors like task completion, feedback, and attendance. Designed to support data-driven evaluation and performance improvement..',
-    stack: ['python,HTML,CSS','OOP'],
+      'A machine learning-based system that predicts intern performance using key factors like task completion, feedback, and attendance. Designed to support data-driven evaluation and performance improvement.',
+    stack: ['Python', 'HTML', 'CSS', 'OOP'],
     href: 'https://intern-performance-prediction-model.vercel.app/',
+    linkLabel: 'VIEW LIVE DEMO',
+  },
+  {
+    title: 'CarCare — Auto Workshop Management System',
+    tag: 'Java · Desktop · MySQL',
+    description:
+      'An enterprise 3-tier automotive workshop solution built with Java Swing (FlatLaf) and MySQL. Features glassmorphic authentication, live FIFO bay queue management, appointment scheduling, automated itemized invoicing, ASCII receipts, and parameterized JDBC queries.',
+    stack: ['Java 21', 'Java Swing', 'FlatLaf', 'MySQL', 'JDBC', '3-Tier Architecture'],
+    href: 'https://github.com/Momintariq-11/CarCare',
+  },
+  {
+    title: 'Jinbo E-Commerce Order System — MySQL',
+    tag: 'Java · MySQL · OOP',
+    description:
+      'A modular console-based e-commerce order processing engine in Java backed by MySQL (XAMPP) and JDBC. Implements 8 GoF design patterns (Facade, Builder, Factory, Strategy, Repository, Observer, Adapter, Singleton) to handle product catalogs, dynamic loyalty discounts, multi-channel payments, and shipments.',
+    stack: ['Java', 'MySQL', 'JDBC', 'Design Patterns (GoF)', 'Clean Architecture'],
+    href: 'https://github.com/Momintariq-11/Jinbo-Order-System-MySQL',
   },
 ]
 
-
-/*
-  PLACEHOLDER — replace with your real LinkedIn education history.
-  I could not access your LinkedIn profile page (it sits behind a
-  login wall for automated tools), so nothing here is verified.
-*/
 export const education = [
   {
-    degree: 'BACHELOR OF SCIENCE ARTIFICIAL INTELLIGENCE ',
+    degree: 'BACHELOR OF SCIENCE ARTIFICIAL INTELLIGENCE',
     institution: 'THE UNIVERSITY OF FAISALABAD',
     period: '2024 — 2028',
-    detail: 'DSA,PYHTON,DBMS,ARTIFICIAL INTELLIGENCE',
+    detail: 'DSA, PYTHON, DBMS, ARTIFICIAL INTELLIGENCE',
   },
-
   {
     degree: 'FSC PRE-ENGINEERING',
     institution: 'KIPS COLLEGE',
@@ -141,10 +136,6 @@ export const education = [
   },
 ]
 
-/*
-  PLACEHOLDER — replace with your real LinkedIn work / internship
-  history. Same reason as above: not pulled from a verified source.
-*/
 export const experience = [
   {
     role: 'Software Engineer Intern',
@@ -158,20 +149,44 @@ export const experience = [
     period: 'JUNE-2026 TO AUGUST-2026',
     points: ['As an Artificial Intelligence Intern at Decode Labs, I gained hands-on experience in Python development and machine learning through project-based learning. I worked on data preprocessing, model implementation, and problem-solving while improving my programming, debugging, and software development skills in a collaborative environment.'],
   },
-
   {
     role: 'MACHINE LEARNING INTERN',
     org: 'INTERNEE.PK',
     period: 'JULY-2026 TO SEPTEMBER-2026',
     points: ['As a Machine Learning Intern at Internee.pk, I have gained hands-on experience in Machine Learning and Artificial Intelligence by working on practical projects and real-world datasets. I have strengthened my skills in Python, data preprocessing, exploratory data analysis (EDA), model development, and model evaluation using industry-standard tools and libraries. This experience has enhanced my problem-solving, analytical thinking, and collaboration skills while deepening my understanding of modern Machine Learning workflows.'],
-  
   },
-
   {
     role: 'Photography Hobbyist',
     org: 'mmt.clicks',
     period: 'JULY-2026 TO PRESENT',
     href: 'https://www.instagram.com/mmt.clicks/',
-    points: ['Pursuing photography as a creative hobby through MMT.clicks — capturing, editing, and sharing visual moments.Exploring visual storytelling, composition, and creative photography techniques as part of my personal passion.'],
-},
+    points: ['Pursuing photography as a creative hobby through MMT.clicks — capturing, editing, and sharing visual moments. Exploring visual storytelling, composition, and creative photography techniques as part of my personal passion.'],
+  },
+]
+
+/*
+  CERTIFICATES — Add your certificate images to /public/images/certificates/
+  Use the image filename as the `image` value.
+*/
+export const certificates = [
+  {
+    title: 'Your Certificate Title',
+    issuer: 'Issuing Organization',
+    date: '2026',
+    image: '/images/certificates/placeholder.png',
+  },
+]
+
+/*
+  HONORS & AWARDS — Add your award images to /public/images/awards/
+  Use the image filename as the `image` value.
+*/
+export const awards = [
+  {
+    title: 'Your Award Title',
+    org: 'Awarding Organization',
+    date: '2026',
+    description: 'Brief description of the honor or award.',
+    image: '/images/awards/placeholder.png',
+  },
 ]

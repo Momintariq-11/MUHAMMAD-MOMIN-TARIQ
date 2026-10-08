@@ -10,15 +10,7 @@ export default function Projects() {
           </p>
           <h2 className="section-title">Selected work</h2>
           <p className="section-sub">
-           
-            <a
-              href="https://github.com/Momintariq-11"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-link"
-            >
-            </a>
-          
+            Each project links to its repository or live demo.
           </p>
         </div>
 
@@ -48,7 +40,7 @@ export default function Projects() {
               </div>
 
               <span className="project-card__link mono">
-                VIEW REPOSITORY
+                {p.linkLabel || 'VIEW REPOSITORY'}
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                   <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
