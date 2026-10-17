@@ -4,9 +4,9 @@ export default function Experience() {
   return (
     <section id="experience" className="section experience">
       <div className="wrap">
-        <div className="section-head">
+        <div className="section-head" data-reveal>
           <p className="eyebrow">
-            <span className="idx">04</span> — EXPERIENCE
+            <span className="idx">05</span> — EXPERIENCE
           </p>
           <h2 className="section-title">Where I've worked</h2>
           <p className="section-sub">
@@ -16,7 +16,7 @@ export default function Experience() {
 
         <div className="timeline">
           {experience.map((e, i) => (
-            <div className="timeline__row" key={i}>
+            <div className="timeline__row" key={i} data-reveal>
               <div className="timeline__marker">
                 <span className="timeline__dot" />
                 {i !== experience.length - 1 && <span className="timeline__line" />}

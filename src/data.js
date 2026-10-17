@@ -1,11 +1,11 @@
 export const profile = {
   name: 'Muhammad Momin Tariq',
-  role: 'iOS · Java Desktop · Full-Stack Developer',
+  role: 'Java Desktop · Full-Stack · AI/ML Developer',
   location: 'Faisalabad, Punjab, Pakistan',
   tagline:
-    'I build software across three different runtimes — native iOS apps, Java desktop systems, and full-stack web — and I like the seams between them.',
+    'I build software that solves real problems — Java desktop systems, full-stack web apps and applied AI — and I run SOLVIQX, a software company in Faisalabad.',
   bio:
-    "I'm a developer working across iOS app development, Java desktop development, and full-stack web development. My projects range from embedded AI hardware (an obstacle-detection stick for visually impaired users) to CLI fleet-management simulators and classic OOP design-pattern implementations in Java, alongside web-based data tooling. I care about writing systems that are structured clearly enough that someone else could read them cold.",
+    "I'm a developer working across Java desktop development, full-stack web development and applied AI/ML. My projects range from embedded AI hardware (an obstacle-detection stick for visually impaired users) to CLI fleet-management simulators and classic OOP design-pattern implementations in Java, alongside web-based data tooling. I care about writing systems that are structured clearly enough that someone else could read them cold.",
   photo: '/images/profile.png',
   resumeNote: 'Resume available on request',
 }
@@ -18,17 +18,13 @@ export const socials = [
     handle: 'Muhammad Momin Tariq',
   },
   { label: 'Email', href: 'mailto:momintariq639@gmail.com', handle: 'momintariq639@gmail.com' },
+  { label: 'SOLVIQX', href: 'https://solviqx.com', handle: 'solviqx.com' },
 ]
 
 export const skills = [
   {
-    category: 'iOS App Development',
-    id: '01',
-    items: ['Swift', 'SwiftUI', 'UIKit', 'Xcode', 'iOS SDK', 'App architecture & MVVM'],
-  },
-  {
     category: 'Java Desktop Development',
-    id: '02',
+    id: '01',
     items: [
       'Java (OOP)',
       'Design patterns (Singleton, Factory, Observer, Builder, Facade, Strategy, Adapter)',
@@ -38,17 +34,17 @@ export const skills = [
   },
   {
     category: 'Full-Stack Development',
-    id: '03',
-    items: ['JavaFX | FXML | Event Handling | Form Validation | JDBC | MVC | SwiftUI', 'React', 'C++', 'Python', 'Java', 'Git & GitHub'],
+    id: '02',
+    items: ['JavaFX | FXML | Event Handling | Form Validation | JDBC | MVC', 'React', 'C++', 'Python', 'Java', 'Git & GitHub'],
   },
   {
     category: 'Applied AI / ML',
-    id: '04',
+    id: '03',
     items: ['Rule-based systems', 'Random Forest / classification', 'Recommendation logic', 'Embedded AI (Arduino sensor integration)'],
   },
   {
     category: 'Database & Backend',
-    id: '05',
+    id: '04',
     items: ['MySQL', 'SQL & Database Design', 'JDBC & Connection Pooling', 'CRUD Operations', 'Relational Data Modelling', 'Query Optimization'],
   },
 ]
@@ -138,10 +134,17 @@ export const education = [
 
 export const experience = [
   {
+    role: 'Founder',
+    org: 'SOLVIQX',
+    period: 'OCTOBER-2026 TO PRESENT',
+    href: 'https://solviqx.com',
+    points: ['Founded SOLVIQX, a software and IT company in Faisalabad, Pakistan that builds websites, web apps, mobile apps, desktop software and business management systems for growing businesses. Leading client projects, product development and the brand, from the first conversation to launch and support.'],
+  },
+  {
     role: 'Software Engineer Intern',
     org: 'KOLONX',
     period: 'JULY-2026 TO OCTOBER-2026',
-    points: ['Developed a strong foundation in Object-Oriented Programming (OOP), SOLID principles, software design patterns, dependency injection, software architecture, SQL, database design, Git, and version control. Gained practical experience in writing clean, maintainable code, implementing unit tests with JUnit, applying Test-Driven Development (TDD), and building Java desktop applications using JavaFX, JDBC, and the MVC architecture. Currently expanding my knowledge of Swift, SwiftUI, and modern iOS application development.'],
+    points: ['Developed a strong foundation in Object-Oriented Programming (OOP), SOLID principles, software design patterns, dependency injection, software architecture, SQL, database design, Git, and version control. Gained practical experience in writing clean, maintainable code, implementing unit tests with JUnit, applying Test-Driven Development (TDD), and building Java desktop applications using JavaFX, JDBC, and the MVC architecture.'],
   },
   {
     role: 'AI/ML INTERN',
@@ -190,3 +193,22 @@ export const awards = [
     image: '/images/awards/placeholder.png',
   },
 ]
+
+export const founder = {
+  logo: '/images/solviqx-logo.png',
+  mark: '/images/solviqx-mark.png',
+  wordmark: '/images/solviqx-wordmark.png',
+  href: 'https://solviqx.com',
+  linkedin: 'https://www.linkedin.com/company/solviqx/',
+  title: 'Founder, SOLVIQX',
+  text:
+    'SOLVIQX is a software and IT company based in Faisalabad, Pakistan. We build websites, web apps, mobile apps and business software that fix real operational problems, and we handle the branding and marketing around them too.',
+  services: [
+    { title: 'Websites', text: 'Corporate sites and landing pages that load fast and work on every screen.' },
+    { title: 'Web Apps & Dashboards', text: 'Custom applications and owner dashboards to see your business at a glance.' },
+    { title: 'Mobile Apps', text: 'Apps for your customers or your team.' },
+    { title: 'Desktop Software', text: 'Productivity and operations tools for the office and the counter.' },
+    { title: 'Business Systems', text: 'Orders, inventory, customers, staff and cash records in one place.' },
+    { title: 'Workflow Automation', text: 'Repetitive manual work turned into processes that run themselves.' },
+  ],
+}

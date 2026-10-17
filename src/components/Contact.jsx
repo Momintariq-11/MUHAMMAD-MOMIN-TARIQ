@@ -1,24 +1,24 @@
-import { profile, socials } from '../data.js'
+import { profile, socials, founder } from '../data.js'
 
 export default function Contact() {
   return (
     <section id="contact" className="section contact">
       <div className="wrap">
-        <div className="contact__inner">
+        <div className="contact__inner" data-reveal>
           <p className="eyebrow">
-            <span className="idx">06</span> —  CONTACT INFO
+            <span className="idx">07</span> — CONTACT INFO
           </p>
           <h2 className="contact__title">
             Let's build <span className="text-red">something</span>.
           </h2>
           <p className="contact__sub">
-            Open to iOS, Java desktop, and full-stack opportunities. Reach out through any of the channels below.
+            Open to Java desktop, full-stack and AI/ML opportunities, and to software projects through SOLVIQX. Reach out through any of the channels below.
           </p>
 
-          <div className="contact__socials">
-            {socials.map((s) => (
+          <div className="contact__socials assemble" data-reveal>
+            {socials.map((s, i) => (
+              <div className="asm" style={{ '--i': i }} key={s.label}>
               <a
-                key={s.label}
                 href={s.href}
                 target={s.href.startsWith('mailto:') ? undefined : '_blank'}
                 rel={s.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
@@ -30,6 +30,7 @@ export default function Contact() {
                   <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
+              </div>
             ))}
           </div>
         </div>
@@ -37,8 +38,19 @@ export default function Contact() {
 
       <footer className="footer">
         <div className="wrap footer__inner">
-          <span className="mono footer__brand">{profile.name.toUpperCase()}</span>
-          
+          <div className="footer__made">
+            <span className="mono footer__label">MADE BY</span>
+            <a className="footer__logo" href={founder.href} target="_blank" rel="noopener noreferrer" aria-label="SOLVIQX, solviqx.com">
+              <img src={founder.wordmark} alt="SOLVIQX" height="20" />
+            </a>
+            <span className="footer__sep" aria-hidden="true">·</span>
+            <a className="mono footer__site" href={founder.href} target="_blank" rel="noopener noreferrer">solviqx.com</a>
+          </div>
+          <div className="footer__right">
+            <span className="mono footer__brand">{profile.name.toUpperCase()}</span>
+            <span className="footer__sep" aria-hidden="true">·</span>
+            <span className="mono footer__meta">FOUNDER, SOLVIQX</span>
+          </div>
         </div>
       </footer>
     </section>

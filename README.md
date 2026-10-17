@@ -1,32 +1,23 @@
 # Muhammad Momin Tariq — Portfolio
 
 A single-page developer portfolio built with React + Vite. Dark theme with a
-red / white / grey / black palette, styled around a "systems console" motif
-to match a background spanning iOS, Java desktop, and full-stack development.
+red / white / grey / black palette, styled around a "systems console" motif,
+with a dedicated section for SOLVIQX (solviqx.com), the software company
+Muhammad founded.
 
-## Before you deploy — read this
+All editable content lives in `src/data.js`: profile, skills, projects,
+experience, education, socials and the SOLVIQX founder block.
 
-Two things in `src/data.js` are **placeholders**, not real data:
+## Animation
 
-1. **`education`** — I could not access your LinkedIn profile page. LinkedIn
-   blocks automated tools from reading individual profile URLs (yours sits
-   behind a login wall), so nothing on the internet has your actual
-   education history indexed publicly. Open `src/data.js`, find the
-   `education` array, and replace every `REPLACE ME` field with your real
-   degree, institution, dates, and details.
-2. **`experience`** — same situation. Replace the `experience` array with
-   your real work/internship history from LinkedIn.
-3. **Email** — in `socials`, replace `REPLACE_ME@example.com` with your
-   real email address (in both the `href` and `handle` fields).
-
-Everything else — your name, photo, GitHub projects, and the skills you
-specified (iOS App Development, Java Desktop Development, Full-Stack
-Development) — is already filled in. The six projects in `projects` were
-pulled directly from your public repositories at
-[github.com/Momintariq-11](https://github.com/Momintariq-11).
-
-If you add new repos later, just add a new object to the `projects` array
-in `src/data.js` — no other file needs to change.
+- **Hero**: staggered entrance on load.
+- **Scroll reveal**: section headings and timeline rows slide in as they enter the screen.
+- **Assemble**: cards (SOLVIQX services, skills, projects, education, contact)
+  fly in from different directions and snap together, and replay when you
+  scroll back. Implemented with an `IntersectionObserver` in `App.jsx` and
+  the `.assemble` / `.asm` classes in `App.css`.
+- A scroll-progress bar runs along the top.
+- Everything respects `prefers-reduced-motion`.
 
 ## Local development
 
@@ -69,11 +60,13 @@ src/
   components/
     Navbar.jsx
     Hero.jsx           ← intro section with your photo
+    Founder.jsx        ← SOLVIQX founder section (logo + service tiles)
     Skills.jsx
     Projects.jsx       ← pulls from data.js → projects (from GitHub)
-    Experience.jsx     ← pulls from data.js → experience (PLACEHOLDER)
-    Education.jsx      ← pulls from data.js → education (PLACEHOLDER)
-    Contact.jsx         ← socials + footer
+    Experience.jsx     ← pulls from data.js → experience
+    Education.jsx      ← pulls from data.js → education
+    Contact.jsx        ← socials + "Made by SOLVIQX" footer
 public/
   images/profile.png   ← your photo
+  images/solviqx-*.png ← SOLVIQX logo, wordmark and mark
 ```

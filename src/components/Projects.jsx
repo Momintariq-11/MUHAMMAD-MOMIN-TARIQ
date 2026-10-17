@@ -4,9 +4,9 @@ export default function Projects() {
   return (
     <section id="projects" className="section projects">
       <div className="wrap">
-        <div className="section-head">
+        <div className="section-head" data-reveal>
           <p className="eyebrow">
-            <span className="idx">03</span> — PROJECTS
+            <span className="idx">04</span> — PROJECTS
           </p>
           <h2 className="section-title">Selected work</h2>
           <p className="section-sub">
@@ -14,10 +14,10 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="projects__grid">
+        <div className="projects__grid assemble" data-reveal>
           {projects.map((p, i) => (
+            <div className="asm" style={{ '--i': i }} key={p.title}>
             <a
-              key={p.title}
               href={p.href}
               target="_blank"
               rel="noopener noreferrer"
@@ -46,6 +46,7 @@ export default function Projects() {
                 </svg>
               </span>
             </a>
+            </div>
           ))}
         </div>
       </div>

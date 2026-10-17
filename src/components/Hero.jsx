@@ -1,4 +1,4 @@
-import { profile } from '../data.js'
+import { profile, founder } from '../data.js'
 
 export default function Hero() {
   return (
@@ -21,6 +21,12 @@ export default function Hero() {
           </h1>
 
           <p className="hero__role mono">{profile.role}</p>
+
+          <a className="hero__founder" href={founder.href} target="_blank" rel="noopener noreferrer">
+            <img src={founder.mark} alt="" width="34" />
+            <span className="mono">FOUNDER, SOLVIQX</span>
+            <span className="hero__founder-arrow" aria-hidden="true">↗</span>
+          </a>
 
           <p className="hero__tagline">{profile.tagline}</p>
 
@@ -53,11 +59,13 @@ export default function Hero() {
         <div className="hero__ticker-track">
           {Array(3).fill(0).map((_, i) => (
             <span key={i} className="hero__ticker-set">
-              <span>IOS APP DEVELOPMENT</span>
-              <span className="hero__ticker-dot">●</span>
               <span>JAVA DESKTOP DEVELOPMENT</span>
               <span className="hero__ticker-dot">●</span>
               <span>FULL-STACK DEVELOPMENT</span>
+              <span className="hero__ticker-dot">●</span>
+              <span>APPLIED AI / ML</span>
+              <span className="hero__ticker-dot">●</span>
+              <span>FOUNDER · SOLVIQX</span>
               <span className="hero__ticker-dot">●</span>
             </span>
           ))}

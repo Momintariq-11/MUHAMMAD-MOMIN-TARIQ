@@ -5,19 +5,20 @@ export default function Skills() {
     <section id="skills" className="section skills">
       <span className="index-mark mono">SKL</span>
       <div className="wrap">
-        <div className="section-head">
+        <div className="section-head" data-reveal>
           <p className="eyebrow">
-            <span className="idx">02</span> — CAPABILITIES
+            <span className="idx">03</span> — CAPABILITIES
           </p>
           <h2 className="section-title">What I build with</h2>
           <p className="section-sub">
-            Three primary disciplines, plus applied AI work that runs underneath most of it.
+            Core disciplines, with applied AI work running underneath most of it.
           </p>
         </div>
 
-        <div className="skills__grid">
-          {skills.map((group) => (
-            <div className="skill-card" key={group.id}>
+        <div className="skills__grid assemble" data-reveal>
+          {skills.map((group, i) => (
+            <div className="asm" style={{ '--i': i }} key={group.id}>
+            <div className="skill-card">
               <div className="skill-card__head">
                 <span className="mono skill-card__id">{group.id}</span>
                 <h3 className="skill-card__title">{group.category}</h3>
@@ -30,6 +31,7 @@ export default function Skills() {
                   </li>
                 ))}
               </ul>
+            </div>
             </div>
           ))}
         </div>
