@@ -1,79 +1,121 @@
 # Muhammad Momin Tariq — Portfolio
 
-A single-page developer portfolio built with React + Vite. Dark theme with a
-red / white / grey / black palette, styled around a "systems console" motif,
-with a dedicated section for SOLVIQX (solviqx.com), the software company
-Muhammad founded.
+**Live site: [momin.solviqx.com](https://momin.solviqx.com)**
 
-All editable content lives in `src/data.js`: profile, skills, projects,
-experience, education, socials and the SOLVIQX founder block.
+Personal portfolio of Muhammad Momin Tariq, a Java desktop, full-stack and AI/ML
+developer from Faisalabad, Pakistan, and Founder & CEO of
+[SOLVIQX](https://solviqx.com), a software and IT company.
 
-## Animation
+![Portfolio preview](docs/preview.jpg)
 
-- **Hero**: staggered entrance on load.
-- **Scroll reveal**: section headings and timeline rows slide in as they enter the screen.
-- **Assemble**: cards (SOLVIQX services, skills, projects, education, contact)
-  fly in from different directions and snap together, and replay when you
-  scroll back. Implemented with an `IntersectionObserver` in `App.jsx` and
-  the `.assemble` / `.asm` classes in `App.css`.
-- A scroll-progress bar runs along the top.
-- Everything respects `prefers-reduced-motion`.
+## What is on the page
 
-## Local development
+| # | Section | What it shows |
+|---|---------|---------------|
+| 01 | Intro | Name, role, photo and a link to SOLVIQX |
+| 02 | Founder | SOLVIQX logo, short pitch and the six services it offers |
+| 03 | Skills | Java desktop, full-stack, applied AI/ML, database and backend |
+| 04 | Projects | Selected work, each linking to its repository or live demo |
+| 05 | Experience | Founder & CEO at SOLVIQX, then internships at KolonX, DecodeLabs and Internee.pk |
+| 06 | Education | BS Artificial Intelligence, The University of Faisalabad |
+| 07 | Contact | GitHub, LinkedIn, email and solviqx.com, plus the footer |
+
+## Selected projects
+
+| Project | Stack |
+|---------|-------|
+| [CarCare](https://github.com/Momintariq-11/CarCare) — auto workshop management system | Java 21, Swing, FlatLaf, MySQL, JDBC |
+| [Jinbo Order System](https://github.com/Momintariq-11/Jinbo-Order-System-MySQL) — e-commerce order engine | Java, MySQL, JDBC, GoF design patterns |
+| [Intern Performance Prediction Model](https://intern-performance-prediction-model.vercel.app/) — live demo | Python, HTML, CSS |
+| [AI Smart Blind Stick](https://github.com/Momintariq-11/AI-smart-blind-stick) | Arduino, C++, ultrasonic sensors |
+| [FLEET-X](https://github.com/Momintariq-11/FLEET-X) — fleet management CLI | Java, OOP |
+| [NovaBot](https://github.com/Momintariq-11/NovaBot-Rule-Based-AI-Chatbot) — rule-based chatbot | Python, Tkinter |
+| [Data Classification Using AI](https://github.com/Momintariq-11/Data-classification-using-ai) | Python, Random Forest |
+| [AI Recommendation Logic](https://github.com/Momintariq-11/AI-Recommendation-Logic) | Python |
+
+## Design and motion
+
+- Dark theme with a red, white, grey and black palette and a "systems console" feel.
+- Hero content animates in on load.
+- **Boxes assemble on scroll:** the SOLVIQX services, skills, projects, education
+  and contact cards fly in from different directions and snap together, then
+  replay when you scroll back up or down.
+- Section headings and timeline rows slide in; the timeline line draws itself.
+- A thin progress bar runs along the top of the page.
+- Respects `prefers-reduced-motion` and works on phones, tablets and desktops.
+
+The motion is plain CSS plus one `IntersectionObserver` in `src/App.jsx`. No
+animation library is used.
+
+## Tech stack
+
+- React 18 and Vite 5
+- Plain CSS (no UI framework)
+- Cloudflare Workers (static assets) for hosting
+
+## Run it locally
+
+Requires Node.js 20 or newer.
 
 ```bash
 npm install
-npm run dev
+npm run dev        # http://localhost:5173
+npm run build      # production build into dist/
+npm run preview    # preview the production build
 ```
 
-Opens at `http://localhost:5173`.
+## Edit the content
 
-## Deploying to Cloudflare (momin.solviqx.com)
+Everything on the page comes from `src/data.js`: profile, socials, skills,
+projects, experience, education and the SOLVIQX founder block. Change the text
+there and the page updates; no component needs touching.
 
-`wrangler.jsonc` is included. In Cloudflare: Workers & Pages, create from this
-GitHub repo, build command `npm run build`, deploy command `npx wrangler deploy`.
-Then add the custom domain `momin.solviqx.com` to the Worker. Every push to
-`main` redeploys automatically.
+## Deployment
 
-## Deploying to Vercel (alternative)
+The site is hosted on **Cloudflare Workers** at
+[momin.solviqx.com](https://momin.solviqx.com) and **redeploys automatically
+on every push to `main`**.
 
-**Option A — via GitHub (recommended)**
+- `wrangler.jsonc` serves the built `dist/` folder as static assets, with a
+  single-page-app fallback.
+- Build command: `npm run build`. Deploy command: `npx wrangler deploy`.
+- The custom domain `momin.solviqx.com` is attached to the Worker in the
+  Cloudflare dashboard.
 
-1. Push this folder to a new GitHub repository.
-2. Go to [vercel.com/new](https://vercel.com/new) and import that repo.
-3. Vercel auto-detects Vite. Framework preset: **Vite**. Build command:
-   `npm run build`. Output directory: `dist`. Click **Deploy**.
-
-**Option B — via Vercel CLI**
-
-```bash
-npm i -g vercel
-vercel
-```
-
-Follow the prompts; it will detect the Vite config automatically.
-
-A `vercel.json` is already included so client-side routing (scrolling to
-section anchors) works correctly on refresh.
+`vercel.json` is kept so the project can also be hosted on Vercel if needed
+(framework preset **Vite**, output directory `dist`).
 
 ## Project structure
 
 ```
-src/
-  data.js              ← ALL editable content lives here
-  App.jsx              ← assembles the page sections
-  App.css              ← all component styling
-  index.css            ← design tokens (colors, fonts, base layout)
-  components/
-    Navbar.jsx
-    Hero.jsx           ← intro section with your photo
-    Founder.jsx        ← SOLVIQX founder section (logo + service tiles)
-    Skills.jsx
-    Projects.jsx       ← pulls from data.js → projects (from GitHub)
-    Experience.jsx     ← pulls from data.js → experience
-    Education.jsx      ← pulls from data.js → education
-    Contact.jsx        ← socials + "Made by SOLVIQX" footer
-public/
-  images/profile.png   ← your photo
-  images/solviqx-*.png ← SOLVIQX logo, wordmark and mark
+├── index.html
+├── wrangler.jsonc          Cloudflare Workers config
+├── vercel.json             optional Vercel config
+├── docs/preview.jpg        screenshot used in this README
+├── public/images/
+│   ├── profile.jpg         portrait used on the page
+│   ├── profile-icon.png    favicon
+│   └── solviqx-*.png       SOLVIQX logo, wordmark and mark
+└── src/
+    ├── main.jsx
+    ├── App.jsx             page layout, scroll observer, progress bar
+    ├── App.css             component styles and animations
+    ├── index.css           design tokens (colours, fonts, base styles)
+    ├── data.js             all editable content
+    └── components/
+        ├── Navbar.jsx
+        ├── Hero.jsx
+        ├── Founder.jsx     SOLVIQX section
+        ├── Skills.jsx
+        ├── Projects.jsx
+        ├── Experience.jsx
+        ├── Education.jsx
+        └── Contact.jsx     socials and footer
 ```
+
+## Links
+
+- Portfolio: [momin.solviqx.com](https://momin.solviqx.com)
+- SOLVIQX: [solviqx.com](https://solviqx.com)
+- GitHub: [@Momintariq-11](https://github.com/Momintariq-11)
+- LinkedIn: [Muhammad Momin Tariq](https://www.linkedin.com/in/muhammad-momin-tariq-4b1b95369)
