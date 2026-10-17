@@ -16,9 +16,11 @@ export default function App() {
 
     const io = new IntersectionObserver(
       (entries) => entries.forEach((e) => e.target.classList.toggle('is-in', e.isIntersecting)),
-      { threshold: 0.12, rootMargin: '0px 0px -6% 0px' }
+      { threshold: 0.15, rootMargin: '0px 0px -6% 0px' }
     )
-    document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el))
+    document
+      .querySelectorAll('[data-reveal]:not(.assemble), .asm, .hero__copy, .hero__photo-wrap')
+      .forEach((el) => io.observe(el))
 
     let ticking = false
     const onScroll = () => {

@@ -28,7 +28,7 @@ export default function Founder() {
 
         <div className="founder__tiles assemble" data-reveal>
           {founder.services.map((s, i) => (
-            <div className="asm" style={{ '--i': i }} key={s.title}>
+            <div className="asm" style={{ '--i': i % 3 }} key={s.title}>
               <article className="tile">
                 <span className="mono tile__num">{String(i + 1).padStart(2, '0')}</span>
                 <h3 className="tile__title">{s.title}</h3>

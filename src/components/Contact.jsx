@@ -17,7 +17,7 @@ export default function Contact() {
 
           <div className="contact__socials assemble" data-reveal>
             {socials.map((s, i) => (
-              <div className="asm" style={{ '--i': i }} key={s.label}>
+              <div className="asm" style={{ '--i': i % 3 }} key={s.label}>
               <a
                 href={s.href}
                 target={s.href.startsWith('mailto:') ? undefined : '_blank'}

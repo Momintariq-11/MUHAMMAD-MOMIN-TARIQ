@@ -17,7 +17,7 @@ export default function Skills() {
 
         <div className="skills__grid assemble" data-reveal>
           {skills.map((group, i) => (
-            <div className="asm" style={{ '--i': i }} key={group.id}>
+            <div className="asm" style={{ '--i': i % 3 }} key={group.id}>
             <div className="skill-card">
               <div className="skill-card__head">
                 <span className="mono skill-card__id">{group.id}</span>

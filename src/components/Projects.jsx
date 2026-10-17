@@ -16,7 +16,7 @@ export default function Projects() {
 
         <div className="projects__grid assemble" data-reveal>
           {projects.map((p, i) => (
-            <div className="asm" style={{ '--i': i }} key={p.title}>
+            <div className="asm" style={{ '--i': i % 3 }} key={p.title}>
             <a
               href={p.href}
               target="_blank"

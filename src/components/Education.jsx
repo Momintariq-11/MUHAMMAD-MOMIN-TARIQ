@@ -17,7 +17,7 @@ export default function Education() {
 
         <div className="edu__list assemble" data-reveal>
           {education.map((e, i) => (
-            <div className="asm" style={{ '--i': i }} key={i}>
+            <div className="asm" style={{ '--i': i % 3 }} key={i}>
             <div className="edu__card">
               <span className="mono edu__period">{e.period}</span>
               <h3 className="edu__degree">{e.degree}</h3>
