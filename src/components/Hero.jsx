@@ -24,7 +24,7 @@ export default function Hero() {
 
           <a className="hero__founder" href={founder.href} target="_blank" rel="noopener noreferrer">
             <img src={founder.mark} alt="" width="34" />
-            <span className="mono">FOUNDER, SOLVIQX</span>
+            <span className="mono">FOUNDER &amp; CEO, SOLVIQX</span>
             <span className="hero__founder-arrow" aria-hidden="true">↗</span>
           </a>
 
@@ -48,8 +48,15 @@ export default function Hero() {
 
         <div className="hero__photo-wrap">
           <div className="hero__photo-frame">
-            <img src={profile.photo} alt={`${profile.name} portrait`} className="hero__photo" />
-            <span className="hero__photo-tag mono"></span>
+            <img
+              src={profile.photo}
+              alt={`${profile.name} portrait`}
+              className="hero__photo"
+              width="760"
+              height="760"
+              decoding="async"
+              fetchPriority="high"
+            />
           </div>
           <div className="hero__photo-grid" aria-hidden="true" />
         </div>

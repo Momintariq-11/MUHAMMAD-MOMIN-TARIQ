@@ -6,7 +6,7 @@ export const profile = {
     'I build software that solves real problems — Java desktop systems, full-stack web apps and applied AI — and I run SOLVIQX, a software company in Faisalabad.',
   bio:
     "I'm a developer working across Java desktop development, full-stack web development and applied AI/ML. My projects range from embedded AI hardware (an obstacle-detection stick for visually impaired users) to CLI fleet-management simulators and classic OOP design-pattern implementations in Java, alongside web-based data tooling. I care about writing systems that are structured clearly enough that someone else could read them cold.",
-  photo: '/images/profile.png',
+  photo: '/images/profile.jpg',
   resumeNote: 'Resume available on request',
 }
 
@@ -134,7 +134,7 @@ export const education = [
 
 export const experience = [
   {
-    role: 'Founder',
+    role: 'Founder & CEO',
     org: 'SOLVIQX',
     period: 'OCTOBER-2026 TO PRESENT',
     href: 'https://solviqx.com',
@@ -200,7 +200,7 @@ export const founder = {
   wordmark: '/images/solviqx-wordmark.png',
   href: 'https://solviqx.com',
   linkedin: 'https://www.linkedin.com/company/solviqx/',
-  title: 'Founder, SOLVIQX',
+  title: 'Founder & CEO, SOLVIQX',
   text:
     'SOLVIQX is a software and IT company based in Faisalabad, Pakistan. We build websites, web apps, mobile apps and business software that fix real operational problems, and we handle the branding and marketing around them too.',
   services: [

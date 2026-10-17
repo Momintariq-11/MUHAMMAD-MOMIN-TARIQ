@@ -39,7 +39,6 @@ export default function Contact() {
       <footer className="footer">
         <div className="wrap footer__inner">
           <div className="footer__made">
-            <span className="mono footer__label">MADE BY</span>
             <a className="footer__logo" href={founder.href} target="_blank" rel="noopener noreferrer" aria-label="SOLVIQX, solviqx.com">
               <img src={founder.wordmark} alt="SOLVIQX" height="20" />
             </a>
@@ -49,7 +48,7 @@ export default function Contact() {
           <div className="footer__right">
             <span className="mono footer__brand">{profile.name.toUpperCase()}</span>
             <span className="footer__sep" aria-hidden="true">·</span>
-            <span className="mono footer__meta">FOUNDER, SOLVIQX</span>
+            <span className="mono footer__meta">FOUNDER &amp; CEO OF SOLVIQX</span>
           </div>
         </div>
       </footer>
