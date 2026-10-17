@@ -28,7 +28,14 @@ npm run dev
 
 Opens at `http://localhost:5173`.
 
-## Deploying to Vercel
+## Deploying to Cloudflare (momin.solviqx.com)
+
+`wrangler.jsonc` is included. In Cloudflare: Workers & Pages, create from this
+GitHub repo, build command `npm run build`, deploy command `npx wrangler deploy`.
+Then add the custom domain `momin.solviqx.com` to the Worker. Every push to
+`main` redeploys automatically.
+
+## Deploying to Vercel (alternative)
 
 **Option A — via GitHub (recommended)**
 
