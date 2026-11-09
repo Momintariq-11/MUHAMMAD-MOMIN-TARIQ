@@ -44,6 +44,8 @@ export default function Contact() {
             </a>
             <span className="footer__sep" aria-hidden="true">·</span>
             <a className="mono footer__site" href={founder.href} target="_blank" rel="noopener noreferrer">solviqx.com</a>
+            <span className="footer__sep" aria-hidden="true">·</span>
+            <a className="mono footer__site" href="https://solviqx.com/software-house-pakistan/">software house in Pakistan</a>
           </div>
           <div className="footer__right">
             <span className="mono footer__brand">{profile.name.toUpperCase()}</span>
